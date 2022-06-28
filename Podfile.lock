@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - IBAnimatable (6.1.0)
+  - IQKeyboardManagerSwift (6.5.9)
+  - lottie-ios (3.3.0)
+  - ObjectMapper (3.5.3)
+  - TransitionButton (0.5.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2)
+  - IBAnimatable
+  - IQKeyboardManagerSwift
+  - lottie-ios
+  - TransitionButton
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - ObjectMapper
+    - TransitionButton
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
+
+PODFILE CHECKSUM: a2f21526931257a7eecc1f26dfad3c0e2f9ba3de
+
+COCOAPODS: 1.11.2

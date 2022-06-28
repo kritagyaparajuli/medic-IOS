@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9876B0A13D9F39E3763EFD35 /* Pods_MediCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF645292F5C2EE81D0EE996 /* Pods_MediCare.framework */; };
+		FA21EE28286991150088EDEB /* Bloodsplit.json in Resources */ = {isa = PBXBuildFile; fileRef = FA21EE27286991150088EDEB /* Bloodsplit.json */; };
+		FA21EE2B2869913B0088EDEB /* Opositive.json in Resources */ = {isa = PBXBuildFile; fileRef = FA21EE2A2869913B0088EDEB /* Opositive.json */; };
+		FA9AFA3D286977D3005C674F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AFA3C286977D3005C674F /* AppDelegate.swift */; };
+		FA9AFA41286977D3005C674F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AFA40286977D3005C674F /* LoginVC.swift */; };
+		FA9AFA44286977D3005C674F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9AFA42286977D3005C674F /* Login.storyboard */; };
+		FA9AFA46286977D4005C674F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9AFA45286977D4005C674F /* Assets.xcassets */; };
+		FA9AFA49286977D4005C674F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9AFA47286977D4005C674F /* LaunchScreen.storyboard */; };
+		FAD103D92869C25200A8319C /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD103D82869C25200A8319C /* UserDefaultsManager.swift */; };
+		FAD5F9B32869B17300440A80 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD5F9B22869B17300440A80 /* Dashboard.storyboard */; };
+		FAD5F9B62869B19E00440A80 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F9B52869B19E00440A80 /* DashboardVC.swift */; };
+		FAD5F9C52869B6B400440A80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F9C42869B6B400440A80 /* Constants.swift */; };
+		FAD5F9C92869B71400440A80 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F9C82869B71400440A80 /* Extensions.swift */; };
+		FAD5F9CE2869B7BB00440A80 /* LoginResponseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F9CD2869B7BB00440A80 /* LoginResponseModal.swift */; };
+		FAD5F9D22869B7C900440A80 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5F9D12869B7C900440A80 /* LoginViewModal.swift */; };
+		FAD78E4C28699DE7006DEC99 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4328699DE7006DEC99 /* Inter-ExtraBold.ttf */; };
+		FAD78E4D28699DE7006DEC99 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4428699DE7006DEC99 /* Inter-Light.ttf */; };
+		FAD78E4E28699DE7006DEC99 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4528699DE7006DEC99 /* Inter-Black.ttf */; };
+		FAD78E4F28699DE7006DEC99 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4628699DE7006DEC99 /* Inter-Bold.ttf */; };
+		FAD78E5028699DE7006DEC99 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4728699DE7006DEC99 /* Inter-Thin.ttf */; };
+		FAD78E5128699DE7006DEC99 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4828699DE7006DEC99 /* Inter-ExtraLight.ttf */; };
+		FAD78E5228699DE7006DEC99 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4928699DE7006DEC99 /* Inter-Medium.ttf */; };
+		FAD78E5328699DE7006DEC99 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4A28699DE7006DEC99 /* Inter-SemiBold.ttf */; };
+		FAD78E5428699DE7006DEC99 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD78E4B28699DE7006DEC99 /* Inter-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23CBDF2A1C23187043B07827 /* Pods-MediCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediCare.release.xcconfig"; path = "Target Support Files/Pods-MediCare/Pods-MediCare.release.xcconfig"; sourceTree = "<group>"; };
+		44DFF76207F20803CB9D7D24 /* Pods-MediCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediCare.debug.xcconfig"; path = "Target Support Files/Pods-MediCare/Pods-MediCare.debug.xcconfig"; sourceTree = "<group>"; };
+		BDF645292F5C2EE81D0EE996 /* Pods_MediCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA21EE27286991150088EDEB /* Bloodsplit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bloodsplit.json; sourceTree = "<group>"; };
+		FA21EE2A2869913B0088EDEB /* Opositive.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Opositive.json; sourceTree = "<group>"; };
+		FA9AFA39286977D3005C674F /* MediCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9AFA3C286977D3005C674F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA9AFA40286977D3005C674F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FA9AFA43286977D3005C674F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		FA9AFA45286977D4005C674F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA9AFA48286977D4005C674F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9AFA4A286977D4005C674F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD103D82869C25200A8319C /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FAD5F9B22869B17300440A80 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		FAD5F9B52869B19E00440A80 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		FAD5F9C42869B6B400440A80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAD5F9C82869B71400440A80 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAD5F9CD2869B7BB00440A80 /* LoginResponseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModal.swift; sourceTree = "<group>"; };
+		FAD5F9D12869B7C900440A80 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		FAD78E4328699DE7006DEC99 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FAD78E4428699DE7006DEC99 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		FAD78E4528699DE7006DEC99 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		FAD78E4628699DE7006DEC99 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		FAD78E4728699DE7006DEC99 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		FAD78E4828699DE7006DEC99 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FAD78E4928699DE7006DEC99 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		FAD78E4A28699DE7006DEC99 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAD78E4B28699DE7006DEC99 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9AFA36286977D3005C674F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9876B0A13D9F39E3763EFD35 /* Pods_MediCare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72848F1151BBED58B0398FDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44DFF76207F20803CB9D7D24 /* Pods-MediCare.debug.xcconfig */,
+				23CBDF2A1C23187043B07827 /* Pods-MediCare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A273460FA0A595FE99CEEFFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDF645292F5C2EE81D0EE996 /* Pods_MediCare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA21EE2628698A600088EDEB /* Lottie Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA21EE27286991150088EDEB /* Bloodsplit.json */,
+				FA21EE2A2869913B0088EDEB /* Opositive.json */,
+			);
+			path = "Lottie Files";
+			sourceTree = "<group>";
+		};
+		FA9AFA30286977D3005C674F = {
+			isa = PBXGroup;
+			children = (
+				FA9AFA3B286977D3005C674F /* MediCare */,
+				FA9AFA3A286977D3005C674F /* Products */,
+				72848F1151BBED58B0398FDC /* Pods */,
+				A273460FA0A595FE99CEEFFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9AFA3A286977D3005C674F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AFA39286977D3005C674F /* MediCare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9AFA3B286977D3005C674F /* MediCare */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AFA51286977E4005C674F /* Modules */,
+				FA9AFA59286984A9005C674F /* Misc */,
+				FAD5F9C32869B68F00440A80 /* Utils */,
+				FAD103D62869C0B200A8319C /* Manager */,
+				FA9AFA3C286977D3005C674F /* AppDelegate.swift */,
+				FA9AFA4A286977D4005C674F /* Info.plist */,
+			);
+			path = MediCare;
+			sourceTree = "<group>";
+		};
+		FA9AFA51286977E4005C674F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9AF2869B15200440A80 /* Dashbord */,
+				FA9AFA52286977F0005C674F /* Login */,
+				FA9AFA53286977F6005C674F /* Register */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA9AFA52286977F0005C674F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9CC2869B77600440A80 /* Modal */,
+				FAD5F9CB2869B74D00440A80 /* ViewModal */,
+				FA9AFA552869781B005C674F /* ViewController */,
+				FA9AFA5428697813005C674F /* Storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA9AFA53286977F6005C674F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FA9AFA5428697813005C674F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AFA42286977D3005C674F /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA9AFA552869781B005C674F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AFA40286977D3005C674F /* LoginVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA9AFA59286984A9005C674F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FA21EE2628698A600088EDEB /* Lottie Files */,
+				FAD78E4228699DD1006DEC99 /* Fonts */,
+				FA9AFA47286977D4005C674F /* LaunchScreen.storyboard */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FAD103D62869C0B200A8319C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FAD103D82869C25200A8319C /* UserDefaultsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FAD5F9AF2869B15200440A80 /* Dashbord */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9B12869B15F00440A80 /* ViewController */,
+				FAD5F9B02869B15800440A80 /* Storyboard */,
+			);
+			path = Dashbord;
+			sourceTree = "<group>";
+		};
+		FAD5F9B02869B15800440A80 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9B22869B17300440A80 /* Dashboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FAD5F9B12869B15F00440A80 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9B52869B19E00440A80 /* DashboardVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAD5F9C32869B68F00440A80 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9C42869B6B400440A80 /* Constants.swift */,
+				FAD5F9C82869B71400440A80 /* Extensions.swift */,
+				FA9AFA45286977D4005C674F /* Assets.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAD5F9CB2869B74D00440A80 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9D12869B7C900440A80 /* LoginViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		FAD5F9CC2869B77600440A80 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5F9CD2869B7BB00440A80 /* LoginResponseModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		FAD78E4228699DD1006DEC99 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAD78E4528699DE7006DEC99 /* Inter-Black.ttf */,
+				FAD78E4628699DE7006DEC99 /* Inter-Bold.ttf */,
+				FAD78E4328699DE7006DEC99 /* Inter-ExtraBold.ttf */,
+				FAD78E4828699DE7006DEC99 /* Inter-ExtraLight.ttf */,
+				FAD78E4428699DE7006DEC99 /* Inter-Light.ttf */,
+				FAD78E4928699DE7006DEC99 /* Inter-Medium.ttf */,
+				FAD78E4B28699DE7006DEC99 /* Inter-Regular.ttf */,
+				FAD78E4A28699DE7006DEC99 /* Inter-SemiBold.ttf */,
+				FAD78E4728699DE7006DEC99 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9AFA38286977D3005C674F /* MediCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9AFA4D286977D4005C674F /* Build configuration list for PBXNativeTarget "MediCare" */;
+			buildPhases = (
+				BEB4BEA94AADA1505EE53E1C /* [CP] Check Pods Manifest.lock */,
+				FA9AFA35286977D3005C674F /* Sources */,
+				FA9AFA36286977D3005C674F /* Frameworks */,
+				FA9AFA37286977D3005C674F /* Resources */,
+				328549BE84467EA5EF3A6A4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediCare;
+			productName = MediCare;
+			productReference = FA9AFA39286977D3005C674F /* MediCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9AFA31286977D3005C674F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FA9AFA38286977D3005C674F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FA9AFA34286977D3005C674F /* Build configuration list for PBXProject "MediCare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA9AFA30286977D3005C674F;
+			productRefGroup = FA9AFA3A286977D3005C674F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9AFA38286977D3005C674F /* MediCare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9AFA37286977D3005C674F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9AFA49286977D4005C674F /* LaunchScreen.storyboard in Resources */,
+				FAD5F9B32869B17300440A80 /* Dashboard.storyboard in Resources */,
+				FA9AFA46286977D4005C674F /* Assets.xcassets in Resources */,
+				FA21EE2B2869913B0088EDEB /* Opositive.json in Resources */,
+				FAD78E4F28699DE7006DEC99 /* Inter-Bold.ttf in Resources */,
+				FAD78E5328699DE7006DEC99 /* Inter-SemiBold.ttf in Resources */,
+				FA9AFA44286977D3005C674F /* Login.storyboard in Resources */,
+				FAD78E5428699DE7006DEC99 /* Inter-Regular.ttf in Resources */,
+				FA21EE28286991150088EDEB /* Bloodsplit.json in Resources */,
+				FAD78E4C28699DE7006DEC99 /* Inter-ExtraBold.ttf in Resources */,
+				FAD78E4D28699DE7006DEC99 /* Inter-Light.ttf in Resources */,
+				FAD78E5228699DE7006DEC99 /* Inter-Medium.ttf in Resources */,
+				FAD78E5128699DE7006DEC99 /* Inter-ExtraLight.ttf in Resources */,
+				FAD78E5028699DE7006DEC99 /* Inter-Thin.ttf in Resources */,
+				FAD78E4E28699DE7006DEC99 /* Inter-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		328549BE84467EA5EF3A6A4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediCare/Pods-MediCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediCare/Pods-MediCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediCare/Pods-MediCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB4BEA94AADA1505EE53E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9AFA35286977D3005C674F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD5F9D22869B7C900440A80 /* LoginViewModal.swift in Sources */,
+				FAD5F9C52869B6B400440A80 /* Constants.swift in Sources */,
+				FAD5F9C92869B71400440A80 /* Extensions.swift in Sources */,
+				FA9AFA41286977D3005C674F /* LoginVC.swift in Sources */,
+				FAD5F9B62869B19E00440A80 /* DashboardVC.swift in Sources */,
+				FAD103D92869C25200A8319C /* UserDefaultsManager.swift in Sources */,
+				FA9AFA3D286977D3005C674F /* AppDelegate.swift in Sources */,
+				FAD5F9CE2869B7BB00440A80 /* LoginResponseModal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA9AFA42286977D3005C674F /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9AFA43286977D3005C674F /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		FA9AFA47286977D4005C674F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9AFA48286977D4005C674F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9AFA4B286977D4005C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9AFA4C286977D4005C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9AFA4E286977D4005C674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DFF76207F20803CB9D7D24 /* Pods-MediCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "MediCare/Misc/Fonts/Inter-ExtraBold.ttf MediCare/Misc/Fonts/Inter-Medium.ttf MediCare/Misc/Fonts/Inter-Light.ttf MediCare/Misc/Fonts/Inter-Regular.ttf MediCare/Misc/Fonts/Inter-Black.ttf MediCare/Misc/Fonts/Inter-Bold.ttf MediCare/Misc/Fonts/Inter-ExtraLight.ttf MediCare/Misc/Fonts/Inter-SemiBold.ttf MediCare/Misc/Fonts/Inter-Thin.ttf";
+				DEVELOPMENT_TEAM = 34ZJJW2YAH;
+				INFOPLIST_FILE = MediCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KritagyaParajuli.MediCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA9AFA4F286977D4005C674F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23CBDF2A1C23187043B07827 /* Pods-MediCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "MediCare/Misc/Fonts/Inter-ExtraBold.ttf MediCare/Misc/Fonts/Inter-Medium.ttf MediCare/Misc/Fonts/Inter-Light.ttf MediCare/Misc/Fonts/Inter-Regular.ttf MediCare/Misc/Fonts/Inter-Black.ttf MediCare/Misc/Fonts/Inter-Bold.ttf MediCare/Misc/Fonts/Inter-ExtraLight.ttf MediCare/Misc/Fonts/Inter-SemiBold.ttf MediCare/Misc/Fonts/Inter-Thin.ttf";
+				DEVELOPMENT_TEAM = 34ZJJW2YAH;
+				INFOPLIST_FILE = MediCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KritagyaParajuli.MediCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9AFA34286977D3005C674F /* Build configuration list for PBXProject "MediCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9AFA4B286977D4005C674F /* Debug */,
+				FA9AFA4C286977D4005C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9AFA4D286977D4005C674F /* Build configuration list for PBXNativeTarget "MediCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9AFA4E286977D4005C674F /* Debug */,
+				FA9AFA4F286977D4005C674F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9AFA31286977D3005C674F /* Project object */;
+}
