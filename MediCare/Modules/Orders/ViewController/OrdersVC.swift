@@ -1,13 +1,13 @@
 //
-//  DashboardVC.swift
+//  OrdersVC.swift
 //  MediCare
 //
-//  Created by Kritagya Parajuli on 6/27/22.
+//  Created by Kritagya Parajuli on 6/29/22.
 //
 
 import UIKit
 
-class DashboardVC: UIViewController {
+class OrdersVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
