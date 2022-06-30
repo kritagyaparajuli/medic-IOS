@@ -57,24 +57,41 @@ extension UILabel{
         }
     }
 }
-extension UITextField{
-    func isPrimaryTextfield(placeholder: String){
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 0.25
-        self.layer.cornerRadius = 4
-        self.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+extension UITextField {
+    func isLoginTextField(placeholder: String){
+        self.layer.borderColor =  UIColor(red: 209/255.0, green: 209/255.0, blue: 209/255.0, alpha: 1.0).cgColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 27.5
+        self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
         self.placeholder = placeholder
+        self.font = UIFont(name: "Inter", size: 14)
+        self.backgroundColor = UIColor.systemBackground
+        self.layer.masksToBounds = true
         //padding view
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: self.frame.size.height))
         self.leftView = paddingView
         leftViewMode = .always
-        self.font = UIFont(name: "Montserrat-Regular", size: 14)
+        
+    }
+    func isPrimaryTextField(placeholder: String){
+        self.layer.borderColor =  UIColor(red: 209/255.0, green: 209/255.0, blue: 209/255.0, alpha: 1.0).cgColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 8
+        self.heightAnchor.constraint(equalToConstant: 45.0).isActive = true
+        self.placeholder = placeholder
+        self.font = UIFont(name: "Inter", size: 14)
+        self.backgroundColor = UIColor.systemBackground
+        self.layer.masksToBounds = true
+        //padding view
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: self.frame.size.height))
+        self.leftView = paddingView
+        leftViewMode = .always
         
     }
 }
 extension UIButton{
     func isPrimaryButton(title: String){
-            self.layer.cornerRadius = 8
+            self.layer.cornerRadius = 27.5
             self.setTitle(title, for: [])
             self.backgroundColor = UIColor(hexString: "CC1C29")
             self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true

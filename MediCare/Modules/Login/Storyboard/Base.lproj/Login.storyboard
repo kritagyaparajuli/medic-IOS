@@ -26,19 +26,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-gT-7jq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-vy-tzz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="689.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsV-Mk-Qw3">
-                                                <rect key="frame" x="133.5" y="656.5" width="57.5" height="17"/>
+                                                <rect key="frame" x="134.5" y="654.5" width="55" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
                                                 <color key="textColor" name="BloodRed"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NotAnuwesh (lol)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blk-os-czc">
-                                                <rect key="frame" x="195" y="659" width="97.5" height="14.5"/>
+                                                <rect key="frame" x="193.5" y="656.5" width="97.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -54,54 +54,46 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="asu-2b-q9V">
-                                        <rect key="frame" x="16" y="10" width="382" height="107.5"/>
+                                        <rect key="frame" x="16" y="10" width="382" height="104.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ae-Pu-3ML">
-                                                <rect key="frame" x="0.0" y="0.0" width="56" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="25"/>
                                                 <color key="textColor" name="BloodRed"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Now," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omw-r8-vAh">
-                                                <rect key="frame" x="0.0" y="38.5" width="134" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="37.5" width="126" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="25"/>
                                                 <color key="textColor" name="BloodRed"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To do this world a favor.." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syG-fF-6KG">
-                                                <rect key="frame" x="0.0" y="77" width="297" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="75" width="273" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="25"/>
                                                 <color key="textColor" name="BloodRed"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="eY7-JM-S64">
-                                        <rect key="frame" x="16" y="121.5" width="206" height="35"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New here?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP9-Fy-eHS">
-                                                <rect key="frame" x="0.0" y="0.0" width="113" height="35"/>
-                                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2r-QQ-Ijq">
-                                                <rect key="frame" x="93" y="0.0" width="113" height="35"/>
-                                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="19"/>
-                                                <state key="normal" title="Create New.">
-                                                    <color key="titleColor" white="0.0" alpha="0.9436619718" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnRegister:" destination="T5l-He-CaL" eventType="touchUpInside" id="3Cr-8H-StU"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="vP9-Fy-eHS" firstAttribute="bottom" secondItem="i2r-QQ-Ijq" secondAttribute="bottom" id="DNx-hM-gha"/>
-                                        </constraints>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Here?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmj-zh-Wkb">
+                                        <rect key="frame" x="16" y="118.5" width="84.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2r-QQ-Ijq">
+                                        <rect key="frame" x="104.5" y="118.5" width="110" height="36"/>
+                                        <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                                        <state key="normal" title="Create New.">
+                                            <color key="titleColor" white="0.0" alpha="0.9436619718" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnRegister:" destination="T5l-He-CaL" eventType="touchUpInside" id="3Cr-8H-StU"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQS-89-oER" customClass="AnimationView" customModule="Lottie">
-                                        <rect key="frame" x="107" y="191.5" width="200" height="120"/>
+                                        <rect key="frame" x="107" y="189.5" width="200" height="120"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="LbN-8h-hx8"/>
@@ -112,78 +104,26 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-dD-ljl">
-                                        <rect key="frame" x="16" y="346.5" width="382" height="140"/>
+                                        <rect key="frame" x="16" y="344.5" width="382" height="140"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kdkanuwesh" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-Yo-oi8" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kdkanuwesh" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gj8-Yo-oi8">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="oni-Ou-KVf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.10000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                                        <point key="value" x="0.0" y="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="27"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="T5l-He-CaL" id="F0z-tm-y4p"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-V9-Key" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Anuwesh123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-V9-Key">
                                                 <rect key="frame" x="0.0" y="85" width="382" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="Yd8-fC-mKm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.10000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                                        <point key="value" x="0.0" y="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="27"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="T5l-He-CaL" id="G8e-1a-iAI"/>
                                                 </connections>
@@ -191,7 +131,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZW-da-rkh" customClass="TransitionButton" customModule="TransitionButton">
-                                        <rect key="frame" x="16" y="566.5" width="382" height="55"/>
+                                        <rect key="frame" x="16" y="564.5" width="382" height="55"/>
                                         <color key="backgroundColor" name="BloodRed"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="vqR-Ve-hsR"/>
@@ -210,7 +150,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m5-10-deY">
-                                        <rect key="frame" x="355" y="448" width="27" height="22"/>
+                                        <rect key="frame" x="355" y="440.5" width="27" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="eye.fill" catalog="system"/>
                                         <state key="selected" image="eye.slash.fill" catalog="system"/>
@@ -219,7 +160,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut6-4s-rG3">
-                                        <rect key="frame" x="16" y="501.5" width="136" height="32"/>
+                                        <rect key="frame" x="16" y="499.5" width="131" height="31"/>
                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,27 +171,31 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Ut6-4s-rG3" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="8UL-Ag-LPX"/>
+                                    <constraint firstItem="lmj-zh-Wkb" firstAttribute="top" secondItem="asu-2b-q9V" secondAttribute="bottom" constant="4" id="03v-pj-IhU"/>
+                                    <constraint firstItem="i2r-QQ-Ijq" firstAttribute="bottom" secondItem="lmj-zh-Wkb" secondAttribute="bottom" id="3bx-nH-z8E"/>
+                                    <constraint firstItem="lmj-zh-Wkb" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="9vr-lH-g3F"/>
                                     <constraint firstAttribute="trailing" secondItem="asu-2b-q9V" secondAttribute="trailing" constant="16" id="EFr-PC-88f"/>
                                     <constraint firstItem="Ut6-4s-rG3" firstAttribute="top" secondItem="UgS-dD-ljl" secondAttribute="bottom" constant="15" id="EUK-1I-4nK"/>
                                     <constraint firstItem="qRf-vy-tzz" firstAttribute="width" secondItem="T5d-gT-7jq" secondAttribute="width" id="G8F-eK-2kr"/>
                                     <constraint firstItem="dQS-89-oER" firstAttribute="centerX" secondItem="T5d-gT-7jq" secondAttribute="centerX" id="GhP-Tj-44K"/>
+                                    <constraint firstItem="i2r-QQ-Ijq" firstAttribute="leading" secondItem="lmj-zh-Wkb" secondAttribute="trailing" constant="4" id="Lcz-S1-J7C"/>
                                     <constraint firstItem="oZW-da-rkh" firstAttribute="top" secondItem="UgS-dD-ljl" secondAttribute="bottom" constant="80" id="Ob3-nF-Bim"/>
                                     <constraint firstAttribute="trailing" secondItem="qRf-vy-tzz" secondAttribute="trailing" id="P3e-u1-H19"/>
                                     <constraint firstItem="AsV-Mk-Qw3" firstAttribute="top" secondItem="oZW-da-rkh" secondAttribute="bottom" constant="35" id="PPl-Kg-M42"/>
                                     <constraint firstItem="UgS-dD-ljl" firstAttribute="top" secondItem="dQS-89-oER" secondAttribute="bottom" constant="35" id="SRB-7b-KSa"/>
                                     <constraint firstItem="5m5-10-deY" firstAttribute="trailing" secondItem="u6G-V9-Key" secondAttribute="trailing" constant="-16" id="U9k-C2-4Am"/>
                                     <constraint firstItem="asu-2b-q9V" firstAttribute="top" secondItem="T5d-gT-7jq" secondAttribute="top" constant="10" id="Ubb-N6-96V"/>
+                                    <constraint firstItem="i2r-QQ-Ijq" firstAttribute="leading" secondItem="lmj-zh-Wkb" secondAttribute="trailing" constant="4" id="V7N-Bu-rjI"/>
                                     <constraint firstItem="qRf-vy-tzz" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" id="W1S-fa-MpA"/>
                                     <constraint firstAttribute="bottom" secondItem="qRf-vy-tzz" secondAttribute="bottom" id="W3t-QY-yV4"/>
-                                    <constraint firstItem="eY7-JM-S64" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="ZMC-aH-bJC"/>
                                     <constraint firstItem="asu-2b-q9V" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="bfb-7G-bgW"/>
                                     <constraint firstItem="qRf-vy-tzz" firstAttribute="top" secondItem="T5d-gT-7jq" secondAttribute="top" id="dUm-T2-fpP"/>
                                     <constraint firstItem="UgS-dD-ljl" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="eMe-ZI-QgA"/>
-                                    <constraint firstItem="eY7-JM-S64" firstAttribute="top" secondItem="asu-2b-q9V" secondAttribute="bottom" constant="4" id="fXf-lG-mXj"/>
+                                    <constraint firstItem="dQS-89-oER" firstAttribute="top" secondItem="i2r-QQ-Ijq" secondAttribute="bottom" constant="35" id="gYW-77-je5"/>
+                                    <constraint firstItem="Ut6-4s-rG3" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="iDC-II-p5I"/>
+                                    <constraint firstItem="i2r-QQ-Ijq" firstAttribute="top" secondItem="asu-2b-q9V" secondAttribute="bottom" constant="4" id="isG-Zb-CP6"/>
                                     <constraint firstItem="5m5-10-deY" firstAttribute="centerY" secondItem="u6G-V9-Key" secondAttribute="centerY" id="oXA-yi-wpS"/>
                                     <constraint firstAttribute="trailing" secondItem="oZW-da-rkh" secondAttribute="trailing" constant="16" id="rUV-bb-HbU"/>
-                                    <constraint firstItem="dQS-89-oER" firstAttribute="top" secondItem="eY7-JM-S64" secondAttribute="bottom" constant="35" id="sFU-nh-oVj"/>
                                     <constraint firstAttribute="trailing" secondItem="UgS-dD-ljl" secondAttribute="trailing" constant="16" id="wUR-V2-jRI"/>
                                     <constraint firstItem="oZW-da-rkh" firstAttribute="leading" secondItem="T5d-gT-7jq" secondAttribute="leading" constant="16" id="yvE-HC-ACr"/>
                                 </constraints>
@@ -260,7 +205,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="T5d-gT-7jq" firstAttribute="leading" secondItem="Jsi-Du-jiQ" secondAttribute="leading" id="36f-PG-zgx"/>
-                            <constraint firstItem="T5d-gT-7jq" firstAttribute="top" secondItem="V5E-ns-pj3" secondAttribute="top" id="3Hr-ef-mvy"/>
+                            <constraint firstItem="T5d-gT-7jq" firstAttribute="top" secondItem="Jsi-Du-jiQ" secondAttribute="top" id="3Hr-ef-mvy"/>
                             <constraint firstAttribute="bottom" secondItem="T5d-gT-7jq" secondAttribute="bottom" id="H6z-xn-2Bc"/>
                             <constraint firstItem="T5d-gT-7jq" firstAttribute="width" secondItem="V5E-ns-pj3" secondAttribute="width" id="eAN-3i-py6"/>
                             <constraint firstItem="Jsi-Du-jiQ" firstAttribute="trailing" secondItem="T5d-gT-7jq" secondAttribute="trailing" id="mQU-bo-0TB"/>
@@ -302,14 +247,8 @@
     </scenes>
     <designables>
         <designable name="dQS-89-oER"/>
-        <designable name="gj8-Yo-oi8">
-            <size key="intrinsicContentSize" width="125" height="34"/>
-        </designable>
         <designable name="oZW-da-rkh">
-            <size key="intrinsicContentSize" width="45" height="33"/>
-        </designable>
-        <designable name="u6G-V9-Key">
-            <size key="intrinsicContentSize" width="104" height="34"/>
+            <size key="intrinsicContentSize" width="43" height="32"/>
         </designable>
     </designables>
     <resources>

@@ -1,5 +1,5 @@
 //
-//  OrdersVC.swift
+//  CartVC.swift
 //  MediCare
 //
 //  Created by Kritagya Parajuli on 6/27/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrdersVC: UIViewController {
+class CartVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

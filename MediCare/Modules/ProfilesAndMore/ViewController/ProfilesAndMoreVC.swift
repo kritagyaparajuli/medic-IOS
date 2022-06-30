@@ -9,21 +9,38 @@ import UIKit
 
 class ProfilesAndMoreVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var btnLogOut: UIButton!
+       
+        // MARK: - Outlets
+        
+        // MARK: - Constants and variables
+        
+        // MARK: - ViewController Functions
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            
+        }
+        override func viewWillAppear(_ animated: Bool) {
+            
+            
+        }
 
-        // Do any additional setup after loading the view.
+// MARK: - IBAction Functions
+
+    @IBAction func btnLogOut(_ sender: Any) {
+        let alert = UIAlertController(title: "Logout?", message: "Do you want to logout?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Logout", style: .destructive, handler: { action in
+            self.navigationController?.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+        
+       
+        
+        
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    // MARK: - Additional Functions
 }

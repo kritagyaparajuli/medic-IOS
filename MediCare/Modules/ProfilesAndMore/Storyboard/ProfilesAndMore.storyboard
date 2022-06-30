@@ -15,9 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="q9M-iK-nFT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-GU-BFS">
+                                <rect key="frame" x="45" y="757" width="324" height="30"/>
+                                <color key="tintColor" red="1" green="0.16001533300000001" blue="0.0116179418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="btnLogOut:" destination="Eot-TF-Iaf" eventType="touchUpInside" id="mld-yg-YxW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OgF-OX-SLF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OgF-OX-SLF" firstAttribute="bottom" secondItem="0Lf-GU-BFS" secondAttribute="bottom" constant="75" id="XeF-bE-6uX"/>
+                            <constraint firstItem="0Lf-GU-BFS" firstAttribute="leading" secondItem="OgF-OX-SLF" secondAttribute="leading" constant="45" id="YoQ-X4-VFM"/>
+                            <constraint firstItem="OgF-OX-SLF" firstAttribute="trailing" secondItem="0Lf-GU-BFS" secondAttribute="trailing" constant="45" id="vHF-o5-yEd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLogOut" destination="0Lf-GU-BFS" id="PbZ-e5-UIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bn-ec-4GE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

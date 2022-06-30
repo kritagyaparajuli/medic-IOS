@@ -10,13 +10,15 @@ import Lottie
 import TransitionButton
 import IBAnimatable
 
+
+
 class LoginVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - Outlets
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var btnLogin: TransitionButton!
-    @IBOutlet weak var emailTextField: AnimatableTextField!
-    @IBOutlet weak var passTextField: AnimatableTextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var btnShowPass: UIButton!
     @IBOutlet weak var btnForgotPassword: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
@@ -29,7 +31,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         navBarConfig()
         animationViewConfig()
         configureTextField()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -58,6 +59,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     // MARK: - Additional Functions
     
     func navBarConfig(){
+        self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -76,31 +78,34 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == emailTextField{
-            UIView.animate(withDuration: 0.5, delay: 0.0,
+            UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut, .allowUserInteraction],
                            animations: {
-                            self.emailTextField.fillColor = UIColor.blue.withAlphaComponent(0.3)
+                            self.emailTextField.backgroundColor = UIColor.blue.withAlphaComponent(0.3)
                            }, completion: nil)
-            self.emailTextField.borderWidth = 0.0
+            
+            
+            
+            
         }
         else{
-            UIView.animate(withDuration: 0.5, delay: 0.0,
+            UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut, .allowUserInteraction],
                            animations: {
-                            self.passTextField.fillColor = UIColor.blue.withAlphaComponent(0.3)
+                            self.passTextField.backgroundColor = UIColor.blue.withAlphaComponent(0.3)
                            }, completion: nil)
-            self.passTextField.borderWidth = 0.0
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: 0.5, delay: 0.0,
+        UIView.animate(withDuration: 0.2, delay: 0.0,
                        options: [.curveEaseOut, .allowUserInteraction],
                        animations: {
-                        self.emailTextField.fillColor = UIColor.systemBackground
-                        self.passTextField.fillColor = UIColor.systemBackground
+                        self.emailTextField.backgroundColor = UIColor.systemBackground
+                        self.passTextField.backgroundColor = UIColor.systemBackground
                        }, completion: nil)
-        self.emailTextField.borderWidth = 0.0
+        self.emailTextField.layer.borderColor =  UIColor(red: 209/255.0, green: 209/255.0, blue: 209/255.0, alpha: 1.0).cgColor
+        self.passTextField.layer.borderColor =  UIColor(red: 209/255.0, green: 209/255.0, blue: 209/255.0, alpha: 1.0).cgColor
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -130,7 +135,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             self.btnLogin.stopAnimation(animationStyle: .normal, revertAfterDelay: 0.1)
             enableUserInteraction()
             emailTextField.layer.borderColor = UIColor(named: "BloodRed")?.cgColor
-            emailTextField.layer.borderWidth = 1.5
+            emailTextField.layer.borderWidth = 1.0
+            emailTextField.layer.masksToBounds = true
             emailTextField.attributedPlaceholder = NSAttributedString(string: "Email required",attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "BloodRed") ?? .red, NSAttributedString.Key.font :UIFont(name: "Inter", size: 16)!])
             
             
@@ -141,7 +147,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             enableUserInteraction()
             passTextField.attributedPlaceholder = NSAttributedString(string: "Password required",attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "BloodRed") ?? .green, NSAttributedString.Key.font :UIFont(name: "Inter", size: 16)!])
             passTextField.layer.borderColor = UIColor(named: "BloodRed")?.cgColor
-            passTextField.layer.borderWidth = 1.5
+            passTextField.layer.borderWidth = 1.0
+            passTextField.layer.masksToBounds = true
             return false
         }
         return true
@@ -163,8 +170,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
     }
     func configureTextField() {
-        emailTextField.layer.cornerRadius = 27.5
-        passTextField.layer.cornerRadius = 27.5
+        emailTextField.isLoginTextField(placeholder: "Username")
+        passTextField.isLoginTextField(placeholder: "Password")
+        
+        
     }
 }
 
@@ -180,10 +189,11 @@ extension LoginVC{
                 UserDefaults.standard.synchronize()
                 print("LOGIN_ACCESS_TOKEN ::: \(token)")
                 self.btnLogin.stopAnimation(animationStyle: .expand, revertAfterDelay: 0.5) {
-                    let vc = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController(identifier: "DashboardVC") as! DashboardVC
-                    vc.modalTransitionStyle = .crossDissolve
-                    vc.modalPresentationStyle = .overFullScreen
-                    self.present(vc, animated: true)
+                    let tabBarVC = CustomTabBarController()
+                    let navController = UINavigationController(rootViewController: tabBarVC)
+                    navController.modalPresentationStyle = .overFullScreen
+                    navController.modalTransitionStyle = .crossDissolve
+                    self.present(navController, animated: true)
                 }
             }
             else{
@@ -194,7 +204,7 @@ extension LoginVC{
                     self.present(alert, animated: true, completion: nil)
                     
                 }
-               
+                
                 
             }
         } fail: { msg in
@@ -204,7 +214,7 @@ extension LoginVC{
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
-           
+            
         }
     }
 }

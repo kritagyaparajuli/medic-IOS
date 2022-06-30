@@ -11,6 +11,7 @@ target 'MediCare' do
  pod 'lottie-ios'
  pod 'IQKeyboardManagerSwift'
  pod 'TransitionButton'
+ pod 'RAMAnimatedTabBarController'
  pod 'Alamofire', '~> 4.7'
  pod 'AlamofireObjectMapper', '~> 5.2'
 
