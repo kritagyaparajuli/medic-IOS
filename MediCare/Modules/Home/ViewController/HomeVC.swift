@@ -65,7 +65,7 @@ extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewWidth = (collectionView.bounds.width/2) - UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        let collectionViewWidth = collectionView.bounds.width
         let itemWidth = (collectionViewWidth - LEFT_INSET - RIGHT_INSET - (INTER_ITEM_INSET * (NUMBER_OF_COLUMN - 1))) / NUMBER_OF_COLUMN
         let itemHeight : CGFloat = 200
         return CGSize(width: itemWidth, height: itemHeight)
