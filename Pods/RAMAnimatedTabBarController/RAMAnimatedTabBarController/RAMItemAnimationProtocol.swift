@@ -53,7 +53,7 @@ open class RAMItemAnimation: NSObject, RAMItemAnimationProtocol {
     @IBInspectable open var duration: CGFloat = 0.5
 
     ///  The text color in selected state.
-    @IBInspectable open var textSelectedColor: UIColor = UIColor(red: 0, green: 0.478431, blue: 1, alpha: 1)
+    @IBInspectable open var textSelectedColor: UIColor = UIColor(red: 236.0/255.0, green: 84.0/255.0, blue: 128.0/255.0, alpha: 1.0)
 
     ///  The icon color in selected state.
     @IBInspectable open var iconSelectedColor: UIColor!

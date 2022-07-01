@@ -27,6 +27,8 @@ class CustomTabBarController: RAMAnimatedTabBarController   {
             UITabBar.appearance().standardAppearance = tabBarAppearance
         }
         
+        tabBar.tintColor = UIColor(named: "PrimaryColor") ?? .systemPink
+        
         
         let vc1 = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(identifier: "HomeVC") as! HomeVC
         let vc2 = UIStoryboard(name: "Search", bundle: nil).instantiateViewController(identifier: "SearchVC") as! SearchVC

@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-xM-FpV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="789.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0M-gR-u2o" customClass="AnimatableView" customModule="IBAnimatable">
                                                 <rect key="frame" x="16" y="16" width="382" height="100"/>
@@ -146,7 +146,7 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-Zm-7Fq">
                                                                                         <rect key="frame" x="33.333333333333343" y="35" width="9.6666666666666643" height="20"/>
                                                                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="17"/>
-                                                                                        <color key="textColor" name="BloodRed"/>
+                                                                                        <color key="textColor" name="PrimaryColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
@@ -225,7 +225,7 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-Ei-sDE">
                                                                                         <rect key="frame" x="41.333333333333314" y="35" width="9.6666666666666643" height="20"/>
                                                                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="17"/>
-                                                                                        <color key="textColor" name="BloodRed"/>
+                                                                                        <color key="textColor" name="PrimaryColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
@@ -302,13 +302,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Avs-sa-I2H">
-                                                <rect key="frame" x="16" y="403" width="382" height="356.33333333333326"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Avs-sa-I2H">
+                                                <rect key="frame" x="0.0" y="403" width="414" height="356.33333333333326"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="356.32999999999998" id="a7G-Dq-xCr"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X0C-kB-TPN">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X0C-kB-TPN">
                                                     <size key="itemSize" width="128" height="128"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -320,24 +320,28 @@
                                                         <integer key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="tYj-fd-dfu" id="hTC-gJ-TAt"/>
+                                                    <outlet property="delegate" destination="tYj-fd-dfu" id="xF6-LT-VT8"/>
+                                                </connections>
                                             </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="N0M-gR-u2o" firstAttribute="top" secondItem="Qcw-xM-FpV" secondAttribute="top" constant="16" id="0Bj-Qk-vtX"/>
                                             <constraint firstItem="FeI-im-aDw" firstAttribute="top" secondItem="CVO-eO-mNB" secondAttribute="bottom" constant="40" id="4jd-Pp-Xke"/>
-                                            <constraint firstItem="Avs-sa-I2H" firstAttribute="leading" secondItem="Qcw-xM-FpV" secondAttribute="leading" constant="16" id="73E-Nq-W1F"/>
+                                            <constraint firstItem="Avs-sa-I2H" firstAttribute="leading" secondItem="Qcw-xM-FpV" secondAttribute="leading" id="73E-Nq-W1F"/>
                                             <constraint firstItem="TzJ-QP-n9Q" firstAttribute="centerY" secondItem="FeI-im-aDw" secondAttribute="centerY" id="Hbo-3K-73x"/>
                                             <constraint firstAttribute="trailing" secondItem="N0M-gR-u2o" secondAttribute="trailing" constant="16" id="M98-SE-Gyb"/>
                                             <constraint firstItem="TzJ-QP-n9Q" firstAttribute="leading" secondItem="FeI-im-aDw" secondAttribute="trailing" constant="4" id="Pyt-Gh-Bnj"/>
                                             <constraint firstItem="CVO-eO-mNB" firstAttribute="leading" secondItem="Qcw-xM-FpV" secondAttribute="leading" constant="16" id="RcL-S5-V2J"/>
-                                            <constraint firstAttribute="bottom" secondItem="Avs-sa-I2H" secondAttribute="bottom" constant="30" id="and-oR-NMC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Avs-sa-I2H" secondAttribute="bottom" constant="15" id="and-oR-NMC"/>
                                             <constraint firstItem="CVO-eO-mNB" firstAttribute="top" secondItem="N0M-gR-u2o" secondAttribute="bottom" constant="24" id="bn0-YR-HvK"/>
                                             <constraint firstItem="N0M-gR-u2o" firstAttribute="leading" secondItem="Qcw-xM-FpV" secondAttribute="leading" constant="16" id="cnf-vJ-lTX"/>
                                             <constraint firstAttribute="trailing" secondItem="TzJ-QP-n9Q" secondAttribute="trailing" constant="16" id="efh-4W-Rqc"/>
                                             <constraint firstAttribute="trailing" secondItem="CVO-eO-mNB" secondAttribute="trailing" constant="16" id="gxw-gP-Yn7"/>
                                             <constraint firstItem="FeI-im-aDw" firstAttribute="leading" secondItem="Qcw-xM-FpV" secondAttribute="leading" constant="16" id="l7J-Qb-OOn"/>
-                                            <constraint firstAttribute="trailing" secondItem="Avs-sa-I2H" secondAttribute="trailing" constant="16" id="qaj-Id-03d"/>
+                                            <constraint firstAttribute="trailing" secondItem="Avs-sa-I2H" secondAttribute="trailing" id="qaj-Id-03d"/>
                                             <constraint firstItem="Avs-sa-I2H" firstAttribute="top" secondItem="FeI-im-aDw" secondAttribute="bottom" constant="24" id="woi-T9-jLd"/>
                                         </constraints>
                                     </view>
@@ -362,6 +366,10 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
+                    <connections>
+                        <outlet property="clFirstAidKits" destination="Avs-sa-I2H" id="ruD-cf-e6F"/>
+                        <outlet property="collectionViewHeight" destination="a7G-Dq-xCr" id="ajZ-g3-k2b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRk-TC-9QL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -375,11 +383,11 @@
     </designables>
     <resources>
         <image name="defaultprofile" width="635" height="635"/>
-        <image name="donateblood" width="30" height="30"/>
+        <image name="donateblood" width="50" height="50"/>
         <image name="requestblood" width="30" height="30"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
-        <namedColor name="BloodRed">
-            <color red="0.80000000000000004" green="0.10980392156862745" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.92549019607843142" green="0.32941176470588235" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

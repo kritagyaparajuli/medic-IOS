@@ -31,8 +31,13 @@ class ProfilesAndMoreVC: UIViewController {
     @IBAction func btnLogOut(_ sender: Any) {
         let alert = UIAlertController(title: "Logout?", message: "Do you want to logout?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Logout", style: .destructive, handler: { action in
-            self.navigationController?.dismiss(animated: true, completion: nil)
-            UserDefaults.standard.set(false, forKey: "isLoggedIn")
+            let viewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            //let viewController = CustomTabBarController()
+            UserDefaults.standard.removeObject(forKey: "isLoggedIn")
+            UserDefaults.standard.synchronize()
+            UIApplication.shared.windows.first?.rootViewController = viewController
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+            print("ISLOGGEDIN :: \(UserDefaults.standard.bool(forKey: "isLoggedIn"))")
         }))
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
         self.present(alert, animated: true)

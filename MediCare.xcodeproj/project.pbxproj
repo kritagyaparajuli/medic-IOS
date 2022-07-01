@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9876B0A13D9F39E3763EFD35 /* Pods_MediCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF645292F5C2EE81D0EE996 /* Pods_MediCare.framework */; };
-		FA21EE28286991150088EDEB /* Bloodsplit.json in Resources */ = {isa = PBXBuildFile; fileRef = FA21EE27286991150088EDEB /* Bloodsplit.json */; };
+		FA19891F286EC1E2008BC0A1 /* BloodJump.json in Resources */ = {isa = PBXBuildFile; fileRef = FA19891E286EC1E1008BC0A1 /* BloodJump.json */; };
+		FA198936286ECBE6008BC0A1 /* LaunchScreenImg.png in Resources */ = {isa = PBXBuildFile; fileRef = FA198935286ECBE6008BC0A1 /* LaunchScreenImg.png */; };
+		FA198939286ECCDA008BC0A1 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = FA198938286ECCDA008BC0A1 /* Contents.json */; };
+		FA1B3958286E19E1002557FE /* FirstAidKitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B3956286E19E1002557FE /* FirstAidKitCell.swift */; };
+		FA1B3959286E19E1002557FE /* FirstAidKitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1B3957286E19E1002557FE /* FirstAidKitCell.xib */; };
 		FA21EE2B2869913B0088EDEB /* Opositive.json in Resources */ = {isa = PBXBuildFile; fileRef = FA21EE2A2869913B0088EDEB /* Opositive.json */; };
+		FA26E70C286EC0010083DA33 /* BloodSplitPink.json in Resources */ = {isa = PBXBuildFile; fileRef = FA26E70B286EC0010083DA33 /* BloodSplitPink.json */; };
+		FA4F9DDA286ED5D700DDB5F5 /* icons8-rh+-120(-xxxhdpi).png in Resources */ = {isa = PBXBuildFile; fileRef = FA4F9DD9286ED5D700DDB5F5 /* icons8-rh+-120(-xxxhdpi).png */; };
 		FA938C15286C654D00398499 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA938C14286C654D00398499 /* HomeVC.swift */; };
 		FA938C18286C655A00398499 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA938C17286C655A00398499 /* Home.storyboard */; };
 		FA938C1B286C65D700398499 /* OrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA938C1A286C65D700398499 /* OrdersVC.swift */; };
@@ -50,8 +56,14 @@
 		23CBDF2A1C23187043B07827 /* Pods-MediCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediCare.release.xcconfig"; path = "Target Support Files/Pods-MediCare/Pods-MediCare.release.xcconfig"; sourceTree = "<group>"; };
 		44DFF76207F20803CB9D7D24 /* Pods-MediCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediCare.debug.xcconfig"; path = "Target Support Files/Pods-MediCare/Pods-MediCare.debug.xcconfig"; sourceTree = "<group>"; };
 		BDF645292F5C2EE81D0EE996 /* Pods_MediCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA21EE27286991150088EDEB /* Bloodsplit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bloodsplit.json; sourceTree = "<group>"; };
+		FA19891E286EC1E1008BC0A1 /* BloodJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BloodJump.json; sourceTree = "<group>"; };
+		FA198935286ECBE6008BC0A1 /* LaunchScreenImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenImg.png; sourceTree = "<group>"; };
+		FA198938286ECCDA008BC0A1 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		FA1B3956286E19E1002557FE /* FirstAidKitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidKitCell.swift; sourceTree = "<group>"; };
+		FA1B3957286E19E1002557FE /* FirstAidKitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAidKitCell.xib; sourceTree = "<group>"; };
 		FA21EE2A2869913B0088EDEB /* Opositive.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Opositive.json; sourceTree = "<group>"; };
+		FA26E70B286EC0010083DA33 /* BloodSplitPink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BloodSplitPink.json; sourceTree = "<group>"; };
+		FA4F9DD9286ED5D700DDB5F5 /* icons8-rh+-120(-xxxhdpi).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-rh+-120(-xxxhdpi).png"; sourceTree = "<group>"; };
 		FA938C14286C654D00398499 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FA938C17286C655A00398499 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		FA938C1A286C65D700398499 /* OrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersVC.swift; sourceTree = "<group>"; };
@@ -119,10 +131,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA1B3955286E1993002557FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B3956286E19E1002557FE /* FirstAidKitCell.swift */,
+				FA1B3957286E19E1002557FE /* FirstAidKitCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FA21EE2628698A600088EDEB /* Lottie Files */ = {
 			isa = PBXGroup;
 			children = (
-				FA21EE27286991150088EDEB /* Bloodsplit.json */,
+				FA26E70B286EC0010083DA33 /* BloodSplitPink.json */,
+				FA19891E286EC1E1008BC0A1 /* BloodJump.json */,
 				FA21EE2A2869913B0088EDEB /* Opositive.json */,
 			);
 			path = "Lottie Files";
@@ -272,6 +294,7 @@
 		FA9AFA30286977D3005C674F = {
 			isa = PBXGroup;
 			children = (
+				FA4F9DD9286ED5D700DDB5F5 /* icons8-rh+-120(-xxxhdpi).png */,
 				FA9AFA3B286977D3005C674F /* MediCare */,
 				FA9AFA3A286977D3005C674F /* Products */,
 				72848F1151BBED58B0398FDC /* Pods */,
@@ -354,6 +377,8 @@
 		FA9AFA59286984A9005C674F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				FA198938286ECCDA008BC0A1 /* Contents.json */,
+				FA198935286ECBE6008BC0A1 /* LaunchScreenImg.png */,
 				FA21EE2628698A600088EDEB /* Lottie Files */,
 				FAD78E4228699DD1006DEC99 /* Fonts */,
 				FA9AFA47286977D4005C674F /* LaunchScreen.storyboard */,
@@ -372,6 +397,7 @@
 		FAD5F9AF2869B15200440A80 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FA1B3955286E1993002557FE /* Cell */,
 				FAD5F9B12869B15F00440A80 /* ViewController */,
 				FAD5F9B02869B15800440A80 /* Storyboard */,
 			);
@@ -496,10 +522,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4F9DDA286ED5D700DDB5F5 /* icons8-rh+-120(-xxxhdpi).png in Resources */,
 				FA9AFA49286977D4005C674F /* LaunchScreen.storyboard in Resources */,
+				FA26E70C286EC0010083DA33 /* BloodSplitPink.json in Resources */,
+				FA198939286ECCDA008BC0A1 /* Contents.json in Resources */,
+				FA19891F286EC1E2008BC0A1 /* BloodJump.json in Resources */,
 				FAD5F9B32869B17300440A80 /* Cart.storyboard in Resources */,
 				FA938C44286C6B8000398499 /* Register.storyboard in Resources */,
 				FA9AFA46286977D4005C674F /* Assets.xcassets in Resources */,
+				FA198936286ECBE6008BC0A1 /* LaunchScreenImg.png in Resources */,
 				FA21EE2B2869913B0088EDEB /* Opositive.json in Resources */,
 				FA938C25286C667200398499 /* Search.storyboard in Resources */,
 				FAD78E4F28699DE7006DEC99 /* Inter-Bold.ttf in Resources */,
@@ -507,7 +538,6 @@
 				FA9AFA44286977D3005C674F /* Login.storyboard in Resources */,
 				FA938C1F286C65E500398499 /* Orders.storyboard in Resources */,
 				FAD78E5428699DE7006DEC99 /* Inter-Regular.ttf in Resources */,
-				FA21EE28286991150088EDEB /* Bloodsplit.json in Resources */,
 				FAD78E4C28699DE7006DEC99 /* Inter-ExtraBold.ttf in Resources */,
 				FAD78E4D28699DE7006DEC99 /* Inter-Light.ttf in Resources */,
 				FAD78E5228699DE7006DEC99 /* Inter-Medium.ttf in Resources */,
@@ -517,6 +547,7 @@
 				FA938C2C286C66F100398499 /* ProfilesAndMore.storyboard in Resources */,
 				FA938C32286C673B00398499 /* Products.storyboard in Resources */,
 				FA938C18286C655A00398499 /* Home.storyboard in Resources */,
+				FA1B3959286E19E1002557FE /* FirstAidKitCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +614,7 @@
 				FA9AFA3D286977D3005C674F /* AppDelegate.swift in Sources */,
 				FA938C1B286C65D700398499 /* OrdersVC.swift in Sources */,
 				FAD5F9CE2869B7BB00440A80 /* LoginResponseModal.swift in Sources */,
+				FA1B3958286E19E1002557FE /* FirstAidKitCell.swift in Sources */,
 				FA9A775F286C5F5A004BF925 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

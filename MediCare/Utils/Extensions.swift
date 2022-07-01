@@ -91,17 +91,27 @@ extension UITextField {
 }
 extension UIButton{
     func isPrimaryButton(title: String){
-            self.layer.cornerRadius = 27.5
-            self.setTitle(title, for: [])
-            self.backgroundColor = UIColor(hexString: "CC1C29")
-            self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
-            self.setTitleColor(.white, for: [])
-        }
-        
-        
+        self.layer.cornerRadius = 27.5
+        self.setTitle(title, for: [])
+        self.backgroundColor = UIColor(named: "PrimaryColor")
+        self.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
+        self.setTitleColor(.white, for: [])
+    }
+    
+    func isAddToCartButton(title: String){
+        self.layer.cornerRadius = 14
+        self.setTitle(title, for: [])
+        self.backgroundColor = UIColor(named: "PrimaryColor")
+        self.heightAnchor.constraint(equalToConstant: 28.0).isActive = true
+        self.widthAnchor.constraint(equalToConstant: 120.0).isActive = true
+        self.setTitleColor(.white, for: [])
+        self.titleLabel?.font = UIFont(name: "Inter-SemiBold", size: 10)
         
     }
-  
-    
+}
+
+
+
+
 
 

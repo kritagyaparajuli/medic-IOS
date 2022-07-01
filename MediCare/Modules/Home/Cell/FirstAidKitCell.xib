@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-ExtraBold.ttf">
+            <string>Inter-ExtraBold</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstAidKitCell" id="gTV-IL-0wX" customClass="FirstAidKitCell" customModule="MediCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-46-qM1" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="16" y="12" width="148" height="169"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstAid" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-hc-1LF">
+                                <rect key="frame" x="12" y="6" width="124" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="U39-6V-xo6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-jn-ENO">
+                                <rect key="frame" x="12" y="84" width="124" height="19"/>
+                                <fontDescription key="fontDescription" name="Inter-ExtraBold" family="Inter" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NPR  ₹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAv-zb-NHG">
+                                <rect key="frame" x="12" y="111" width="41" height="16"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="13"/>
+                                <color key="textColor" name="PriceColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8y-kq-rwd">
+                                <rect key="frame" x="53" y="111" width="22" height="16"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="13"/>
+                                <color key="textColor" name="PriceColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um5-5M-zav">
+                                <rect key="frame" x="12" y="133" width="87" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="ADD TO CART"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IAv-zb-NHG" firstAttribute="top" secondItem="vQT-jn-ENO" secondAttribute="bottom" constant="8" id="1DS-T6-x8M"/>
+                            <constraint firstItem="D8y-kq-rwd" firstAttribute="centerY" secondItem="IAv-zb-NHG" secondAttribute="centerY" id="7BY-Rv-bFH"/>
+                            <constraint firstItem="vQT-jn-ENO" firstAttribute="leading" secondItem="RrT-46-qM1" secondAttribute="leading" constant="12" id="JeK-K5-zzj"/>
+                            <constraint firstItem="eiz-hc-1LF" firstAttribute="top" secondItem="RrT-46-qM1" secondAttribute="top" constant="6" id="LSJ-nR-Fv9"/>
+                            <constraint firstItem="IAv-zb-NHG" firstAttribute="leading" secondItem="RrT-46-qM1" secondAttribute="leading" constant="12" id="RM2-SW-2J3"/>
+                            <constraint firstItem="um5-5M-zav" firstAttribute="top" secondItem="IAv-zb-NHG" secondAttribute="bottom" constant="6" id="Rr0-bt-g1F"/>
+                            <constraint firstAttribute="trailing" secondItem="eiz-hc-1LF" secondAttribute="trailing" constant="12" id="S7u-QC-p9K"/>
+                            <constraint firstItem="eiz-hc-1LF" firstAttribute="leading" secondItem="RrT-46-qM1" secondAttribute="leading" constant="12" id="UYy-aQ-m63"/>
+                            <constraint firstItem="um5-5M-zav" firstAttribute="leading" secondItem="RrT-46-qM1" secondAttribute="leading" constant="12" id="WQj-dn-E2L"/>
+                            <constraint firstItem="D8y-kq-rwd" firstAttribute="leading" secondItem="IAv-zb-NHG" secondAttribute="trailing" id="e1z-kT-Ikn"/>
+                            <constraint firstAttribute="trailing" secondItem="vQT-jn-ENO" secondAttribute="trailing" constant="12" id="ijo-JJ-DPr"/>
+                            <constraint firstItem="vQT-jn-ENO" firstAttribute="top" secondItem="eiz-hc-1LF" secondAttribute="bottom" constant="8" id="kAZ-z8-LRF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="RrT-46-qM1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="4bz-Fp-uLo"/>
+                <constraint firstAttribute="trailing" secondItem="RrT-46-qM1" secondAttribute="trailing" constant="16" id="8L6-y1-c3l"/>
+                <constraint firstItem="RrT-46-qM1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="DGj-BD-3g0"/>
+                <constraint firstAttribute="bottom" secondItem="RrT-46-qM1" secondAttribute="bottom" constant="12" id="nBO-em-2ka"/>
+            </constraints>
+            <size key="customSize" width="180" height="193"/>
+            <connections>
+                <outlet property="btnAddToCart" destination="um5-5M-zav" id="FDI-4E-WYv"/>
+                <outlet property="imgFirstAidKit" destination="eiz-hc-1LF" id="YHF-s7-H6i"/>
+                <outlet property="lblPrice" destination="D8y-kq-rwd" id="hZq-ZT-Djn"/>
+            </connections>
+            <point key="canvasLocation" x="78.260869565217391" y="157.03125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="FirstAid" width="768" height="768"/>
+        <namedColor name="PriceColor">
+            <color red="0.93725490196078431" green="0.55686274509803924" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

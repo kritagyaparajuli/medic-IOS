@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "First-Aid-Kit-Vector-PNG-Pic-HQ-png-768x768.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "RH+.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

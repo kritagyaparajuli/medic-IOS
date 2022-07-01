@@ -25,6 +25,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - Constants and variables
     
+   
+    
     // MARK: - ViewController Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -189,11 +191,16 @@ extension LoginVC{
                 UserDefaults.standard.synchronize()
                 print("LOGIN_ACCESS_TOKEN ::: \(token)")
                 self.btnLogin.stopAnimation(animationStyle: .expand, revertAfterDelay: 0.5) {
-                    let tabBarVC = CustomTabBarController()
-                    let navController = UINavigationController(rootViewController: tabBarVC)
-                    navController.modalPresentationStyle = .overFullScreen
-                    navController.modalTransitionStyle = .crossDissolve
-                    self.present(navController, animated: true)
+//                    let tabBarVC = CustomTabBarController()
+//                    self.navigationController?.pushViewController(tabBarVC, animated: true)
+//                    tabBarVC.modalPresentationStyle = .overFullScreen
+//                    tabBarVC.modalTransitionStyle = .crossDissolve
+                    //let viewController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarcontroller") as! UITabBarController
+                    let viewController = CustomTabBarController()
+                    viewController.modalPresentationStyle = .overFullScreen
+                    viewController.modalTransitionStyle = .crossDissolve
+                    UIApplication.shared.windows.first?.rootViewController = viewController
+                    UIApplication.shared.windows.first?.makeKeyAndVisible()
                 }
             }
             else{
@@ -218,6 +225,8 @@ extension LoginVC{
         }
     }
 }
+
+
 
 
 
